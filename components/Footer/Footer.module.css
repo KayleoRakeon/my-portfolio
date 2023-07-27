@@ -1,0 +1,11 @@
+.Footer {
+	width: 100%;
+	height: auto;
+	padding: var(--2x) var(--mobile-padding);
+	box-sizing: border-box;
+}
+
+.Footer a {
+	text-decoration: none;
+	color: var(--dark);
+}

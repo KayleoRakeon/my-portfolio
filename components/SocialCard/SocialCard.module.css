@@ -1,0 +1,43 @@
+.Wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.SocialCard {
+	border: solid 3px var(--dark);
+	display: flex;
+	align-items: center;
+	background: var(--background);
+	box-shadow: 0 0 0 var(--accent);
+	transition: all 0.3s ease-out;
+}
+.SocialCard:hover {
+	transform: translate(-8px, -8px);
+	box-shadow: 8px 8px 0 var(--accent);
+}
+.SocialCard:active {
+	transform: translate(-4px, -4px);
+	box-shadow: 4px 4px 0 var(--accent);
+}
+
+.Icon {
+	width: var(--2x);
+	height: var(--2x);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: solid 3px var(--dark);
+}
+
+.SocialInfo {
+	padding: 0 var(--x);
+	box-sizing: border-box;
+}
+
+.SocialInfo p {
+	font-size: 16px;
+	font-weight: 600;
+}
