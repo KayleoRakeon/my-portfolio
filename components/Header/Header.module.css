@@ -1,4 +1,97 @@
 .Header {
-	padding: var(--x);
+	padding: 0 var(--mobile-padding);
 	box-sizing: border-box;
+	background: var(--background);
+	border-bottom: solid 3px var(--dark);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Header > img {
+	width: 200px;
+	padding: var(--x) var(--2x) var(--x) 0;
+	border-right: solid 3px var(--dark);
+}
+
+.Header .Menu .Burger {
+	width: 35px;
+	height: var(--x);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.Burger span {
+	width: 100%;
+	height: 5px;
+	background: var(--dark);
+}
+.Burger:hover span {
+	background: var(--dark-details);
+}
+
+.Header .Menu .Overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	right: -100%;
+	background: rgba(23, 44, 102, 0);
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	transition: all 0.3s ease-out;
+}
+
+.Header .Menu.Open .Overlay {
+	right: 0;
+	background: rgba(23, 44, 102, 0.2);
+}
+
+.Header .Overlay nav {
+	width: 150px;
+	height: 100%;
+	background: var(--background);
+	border-left: solid 3px var(--dark);
+	padding: var(--2x) var(--x);
+	box-sizing: border-box;
+}
+
+.Overlay nav .Cross {
+	width: 25px;
+	height: 25px;
+	margin-bottom: var(--2x);
+	cursor: pointer;
+}
+
+.Cross span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: var(--dark);
+}
+
+.Cross span:first-child {
+	transform: rotate(45deg) translateY(3px);
+}
+.Cross span:last-child {
+	transform: rotate(-45deg) translateY(-2px);
+}
+
+.Overlay nav ul {
+	list-style: none;
+}
+
+.Overlay nav ul li {
+	margin-bottom: var(--x);
+}
+
+.Overlay nav ul li a {
+	color: var(--dark);
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: none;
 }

@@ -6,6 +6,7 @@
 	--secondary: #f3d2c1;
 	--accent: #f582ae;
 	--dark: #001858;
+	--dark-details: #172c66;
 	--form-input-wrong: #ff6969;
 	--form-input-correct: #8bdd8e;
 
@@ -71,4 +72,8 @@
 html {
 	font-family: 'EB Garamond', serif;
 	font-weight: 400;
+}
+
+body {
+	overflow-x: hidden;
 }
