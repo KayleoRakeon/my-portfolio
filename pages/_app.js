@@ -5,6 +5,7 @@ import Head from 'next/head';
 // Composant
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import Layout from '@/components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -21,9 +22,14 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
+
 			<Header />
-			<Component {...pageProps} />
-			<Footer />
+
+			<Layout>
+				<Component {...pageProps} />
+				<Footer />
+				<Footer />
+			</Layout>
 		</>
 	);
 }
