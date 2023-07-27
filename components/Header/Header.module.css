@@ -1,0 +1,4 @@
+.Header {
+	padding: var(--x);
+	box-sizing: border-box;
+}

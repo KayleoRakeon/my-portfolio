@@ -1,0 +1,74 @@
+/* ROOT */
+:root {
+	/* colors  */
+	--background: #fef6e4;
+	--primary: #8bd3dd;
+	--secondary: #f3d2c1;
+	--accent: #f582ae;
+	--dark: #001858;
+	--form-input-wrong: #ff6969;
+	--form-input-correct: #8bdd8e;
+
+	/* fonts */
+	--font-main: 'EB Garamond';
+	--font-secondary: 'Optima';
+	--font-secondary-italic: 'Optima Italic';
+	--font-secondary-medium: 'Optima Medium';
+	--font-secondary-bold: 'Optima Bold';
+
+	/* Margin / Padding */
+	--mobile-padding: 20px;
+	--x: 25px;
+	--2x: calc(var(--x) * 2);
+	--3x: calc(var(--x) * 3);
+	--4x: calc(var(--x) * 4);
+	--sm: calc(var(--x) / 2);
+}
+
+/* FONT-FACE */
+
+@font-face {
+	font-family: 'Optima';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Optima'),
+		url('../public/fonts/OPTIMA.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Optima Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Optima Italic'),
+		url('../public/fonts/Optima_Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Optima Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Optima Medium'),
+		url('../public/fonts/Optima Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Optima Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Optima Bold'),
+		url('../public/fonts/OPTIMA_B.woff') format('woff');
+}
+
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* EB GARAMONT PAR DEFAUT */
+
+html {
+	font-family: 'EB Garamond', serif;
+	font-weight: 400;
+}
