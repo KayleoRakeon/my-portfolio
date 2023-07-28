@@ -1,8 +1,15 @@
 // Librairie
 import classes from './LastProject.module.css';
 
+// Composants
+import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
+
 function LastProject() {
-	return <h1>Last Project</h1>;
+	return (
+		<section id="lastProject">
+			<SectionTitle />
+		</section>
+	);
 }
 
 export default LastProject;

@@ -1,0 +1,32 @@
+.Skill {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Skill > div {
+	width: var(--4x);
+	height: var(--4x);
+	background: var(--secondary);
+	border: solid 3px var(--dark);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 var(--sm) 0;
+}
+
+.Skill > div img {
+	width: var(--2x);
+}
+
+.Skill > p {
+	text-align: center;
+	font-family: var(--font-secondary-bold);
+	font-size: 16px;
+}
+
+.Skill > p span {
+	display: block;
+}
