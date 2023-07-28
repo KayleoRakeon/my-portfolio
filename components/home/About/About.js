@@ -37,7 +37,7 @@ function About() {
 				<Button
 					label="Me contacter"
 					target="#contact"
-					align="right"
+					align="center"
 				/>
 			</article>
 		</section>
