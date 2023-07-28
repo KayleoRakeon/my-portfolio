@@ -33,23 +33,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('Optima'),
-		url('../public/fonts/OPTIMA.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Optima Italic';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Optima Italic'),
-		url('../public/fonts/Optima_Italic.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Optima Medium';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Optima Medium'),
-		url('../public/fonts/Optima Medium.woff') format('woff');
+		url('../public/fonts/OPTIMA.ttf') format('ttf');
 }
 
 @font-face {
@@ -57,7 +41,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('Optima Bold'),
-		url('../public/fonts/OPTIMA_B.woff') format('woff');
+		url('../public/fonts/OPTIMA_B.ttf') format('ttf');
 }
 
 /* RESET */
@@ -73,8 +57,14 @@ html {
 	font-family: 'EB Garamond', serif;
 	font-weight: 400;
 	scroll-behavior: smooth;
+	color: var(--dark);
 }
 
 body {
 	overflow-x: hidden;
+}
+
+.wrapper {
+	padding: var(--2x) var(--mobile-padding);
+	box-sizing: border-box;
 }
