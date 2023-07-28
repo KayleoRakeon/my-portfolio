@@ -3,18 +3,12 @@ import classes from './About.module.css';
 
 // Composants
 import Button from '@/components/global/Button/Button';
+import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 
 function About() {
 	return (
 		<section id="about" className={classes.About}>
-			<article className={classes.Title}>
-				<div>
-					<h2>à propos</h2>
-				</div>
-				<div>
-					<img src="./pictos/arrow.png" />
-				</div>
-			</article>
+			<SectionTitle label="à propos" shape="rectangle" />
 			<article className={classes.Content}>
 				<div className={classes.Quote}>
 					<p>" Le diable se cache dans les détails. "</p>
