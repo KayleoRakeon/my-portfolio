@@ -14,7 +14,8 @@ function SectionTitle({ ...props }) {
 				<h2>{props.label}</h2>
 			</div>
 
-			{props.label === 'à propos' ? (
+			{props.label === 'à propos' ||
+			props.label === 'me contacter' ? (
 				<div>
 					<img src="./pictos/arrow.png" />
 				</div>
