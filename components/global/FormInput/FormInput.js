@@ -16,6 +16,7 @@ function FormInput({ ...props }) {
 						name={props.name}
 						placeholder={props.placeholder}
 						rows={4}
+						pattern={props.pattern}
 					></textarea>
 				);
 				break;
@@ -36,6 +37,7 @@ function FormInput({ ...props }) {
 						id={props.id}
 						name={props.name}
 						placeholder={props.placeholder}
+						pattern={props.pattern}
 					/>
 				);
 		}
