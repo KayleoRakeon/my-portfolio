@@ -44,9 +44,6 @@ function Header() {
 							<li>
 								<Link href="/projets">projets</Link>
 							</li>
-							<li>
-								<Link href="/contact">contact</Link>
-							</li>
 						</ul>
 					</nav>
 				</div>
