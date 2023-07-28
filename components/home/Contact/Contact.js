@@ -3,7 +3,8 @@ import classes from './Contact.module.css';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
-import EMAILJS_IDS from '@/api/emailjs';
+import EMAILJS_IDS from '@/helpers/emailjs';
+import { SquareLoader } from 'react-spinners';
 
 // Composant
 import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
@@ -14,6 +15,7 @@ function Contact() {
 	// State
 	const [formSuccess, setFormSuccess] = useState(false);
 	const [formError, setFormError] = useState(false);
+	const [isLoading, setIsLoading] = useState(false);
 
 	// Variables
 	const {
@@ -26,6 +28,7 @@ function Contact() {
 	const formSubmittedHandler = async (datas) => {
 		setFormSuccess(false);
 		setFormError(false);
+		setIsLoading(true);
 
 		try {
 			const toSend = {
@@ -59,6 +62,7 @@ function Contact() {
 					'Désolé, une erreur est survenue... Je te conseilles de réessayer plus tard, ou de me contacter via un autre moyen, mes infos sont juste en dessous !',
 			});
 		}
+		setIsLoading(false);
 	};
 
 	return (
@@ -121,12 +125,29 @@ function Contact() {
 						></textarea>
 					</div>
 					<div className={classes.FormInput}>
-						<Button
-							label="envoyer"
-							submit={true}
-							target=""
-							align="center"
-						/>
+						{isLoading ? (
+							<div
+								style={{
+									width: '100%',
+									display: 'flex',
+									justifyContent: 'center',
+								}}
+							>
+								<SquareLoader
+									size={30}
+									thickness={100}
+									speed={25}
+									color="#001858"
+								/>
+							</div>
+						) : (
+							<Button
+								label="envoyer"
+								submit={true}
+								target=""
+								align="center"
+							/>
+						)}
 					</div>
 				</form>
 			)}
