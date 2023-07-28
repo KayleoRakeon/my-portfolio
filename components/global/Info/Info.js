@@ -3,21 +3,30 @@ import classes from './Info.module.css';
 
 function Info({ ...props }) {
 	// Variable
-	let background;
+	let styles;
 	switch (props.type) {
 		case 'error':
-			background = '#ff6969';
+			styles = {
+				background: '#ff6969',
+				color: '#fef6e4',
+			};
 			break;
 		case 'success':
-			background = '#8bdd8e';
+			styles = {
+				background: '#8bdd8e',
+				color: '#001858',
+			};
 			break;
 		default:
-			background = '#fef6e4';
+			styles = {
+				background: '#fef6e4',
+				color: '#001858',
+			};
 			break;
 	}
 
 	return (
-		<div className={classes.Info} style={{ background }}>
+		<div className={classes.Info} style={styles}>
 			{props.label}
 		</div>
 	);
