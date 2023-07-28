@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import EMAILJS_IDS from '@/helpers/emailjs';
-import { SquareLoader } from 'react-spinners';
+import { SyncLoader } from 'react-spinners';
 
 // Composant
 import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
@@ -133,9 +133,9 @@ function Contact() {
 									justifyContent: 'center',
 								}}
 							>
-								<SquareLoader
-									size={30}
-									thickness={100}
+								<SyncLoader
+									size={15}
+									thickness={10}
 									speed={25}
 									color="#001858"
 								/>
