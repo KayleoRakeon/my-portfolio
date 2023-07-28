@@ -7,7 +7,7 @@ import Skill from '@/components/global/Skill/Skill';
 
 function Skills() {
 	// Variable
-	const SkillsDatas = {
+	const skillsDatas = {
 		dev: [
 			{
 				label: 'développement',
@@ -53,7 +53,7 @@ function Skills() {
 			<SectionTitle label="expertise" shape="rectangle" />
 			<article className={classes.SkillsContainer}>
 				<div className={classes.Dev}>
-					{SkillsDatas.dev.map((skill) => (
+					{skillsDatas.dev.map((skill) => (
 						<Skill
 							label={skill.label}
 							spanLabel={skill.spanLabel}
@@ -62,7 +62,7 @@ function Skills() {
 					))}
 				</div>
 				<div className={classes.Design}>
-					{SkillsDatas.design.map((skill) => (
+					{skillsDatas.design.map((skill) => (
 						<Skill
 							label={skill.label}
 							spanLabel={skill.spanLabel}
