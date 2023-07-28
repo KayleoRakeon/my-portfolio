@@ -74,6 +74,12 @@ function Contact() {
 				''
 			)}
 
+			{formError ? (
+				<Info label={formError.message} type="error" />
+			) : (
+				''
+			)}
+
 			{formSuccess ? (
 				<Info type="success" label={formSuccess.message} />
 			) : (
