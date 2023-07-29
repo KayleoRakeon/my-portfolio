@@ -30,11 +30,13 @@
 .FormInput input:focus,
 .FormInput textarea:focus {
 	box-shadow: 8px 8px 0 var(--primary);
+	border-color: var(--primary);
 	outline: none;
 }
 
 .FormInput input:invalid,
 .FormInput textarea:invalid {
 	box-shadow: 8px 8px 0 var(--form-input-wrong);
+	border-color: var(--form-input-wrong);
 	outline: none;
 }
