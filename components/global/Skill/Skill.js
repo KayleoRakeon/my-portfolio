@@ -1,11 +1,16 @@
 // Librairie
 import classes from './Skill.module.css';
+import Image from 'next/image';
 
 function Skill({ ...props }) {
 	return (
 		<div className={classes.Skill}>
 			<div>
-				<img src={`./pictos/${props.imgName}.svg`} />
+				<Image
+					src={`/pictos/${props.imgName}.svg`}
+					width={50}
+					height={50}
+				/>
 			</div>
 			<p>
 				{props.label}

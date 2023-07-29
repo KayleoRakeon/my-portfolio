@@ -1,5 +1,6 @@
 // Librairie
 import classes from './SocialCard.module.css';
+import Image from 'next/image';
 
 function SocialCard({ ...props }) {
 	return (
@@ -17,7 +18,11 @@ function SocialCard({ ...props }) {
 						background: props.color,
 					}}
 				>
-					<img src={`./pictos/${props.imgName}.svg`} />
+					<Image
+						src={`/pictos/${props.imgName}.svg`}
+						width={20}
+						height={20}
+					/>
 				</div>
 				{props.country ? (
 					<div className={classes.Country}>

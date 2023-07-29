@@ -2,6 +2,8 @@
 import classes from './Header.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
+import logo from '../../../public/logo/logo_light_typo.svg';
 
 function Header() {
 	// State
@@ -14,7 +16,7 @@ function Header() {
 
 	return (
 		<header className={classes.Header}>
-			<img src="./logo/logo_light_typo.svg" />
+			<Image src={logo} />
 			<div
 				className={
 					classes.Menu + (isMenuOpen ? ' ' + classes.Open : '')

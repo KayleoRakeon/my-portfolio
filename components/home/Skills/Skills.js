@@ -53,8 +53,9 @@ function Skills() {
 			<SectionTitle label="expertise" shape="rectangle" />
 			<article className={classes.SkillsContainer}>
 				<div className={classes.Dev}>
-					{skillsDatas.dev.map((skill) => (
+					{skillsDatas.dev.map((skill, key) => (
 						<Skill
+							key={key}
 							label={skill.label}
 							spanLabel={skill.spanLabel}
 							imgName={skill.imgName}
@@ -62,8 +63,9 @@ function Skills() {
 					))}
 				</div>
 				<div className={classes.Design}>
-					{skillsDatas.design.map((skill) => (
+					{skillsDatas.design.map((skill, key) => (
 						<Skill
+							key={key}
 							label={skill.label}
 							spanLabel={skill.spanLabel}
 							imgName={skill.imgName}

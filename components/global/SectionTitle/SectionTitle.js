@@ -1,5 +1,6 @@
 // Librairie
 import classes from './SectionTitle.module.css';
+import Image from 'next/image';
 
 function SectionTitle({ ...props }) {
 	// Variable
@@ -17,7 +18,7 @@ function SectionTitle({ ...props }) {
 			{props.label === 'à propos' ||
 			props.label === 'me contacter' ? (
 				<div>
-					<img src="./pictos/arrow.png" />
+					<Image src="/pictos/arrow.png" width={50} height={30} />
 				</div>
 			) : (
 				''

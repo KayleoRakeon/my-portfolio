@@ -1,5 +1,6 @@
 // Librairie
 import classes from './LastProject.module.css';
+import Image from 'next/image';
 
 // Composants
 import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
@@ -28,8 +29,8 @@ function LastProject() {
 				<div className={classes.ProjectInfos}>
 					<h3>{lastProjectDatas.title}</h3>
 					<div className={classes.Description}>
-						{lastProjectDatas.description.map((paragraph) => (
-							<p>{paragraph}</p>
+						{lastProjectDatas.description.map((paragraph, key) => (
+							<p key={key}>{paragraph}</p>
 						))}
 					</div>
 					<Button
@@ -39,8 +40,10 @@ function LastProject() {
 					/>
 				</div>
 				<div className={classes.ImageContainer}>
-					<img
-						src={`./projects/${projectFolder}/${lastProjectDatas.image}`}
+					<Image
+						src={`/projects/${projectFolder}/${lastProjectDatas.image}`}
+						width={500}
+						height={500}
 					/>
 				</div>
 			</article>
