@@ -55,6 +55,7 @@ function Footer() {
 					imgName="phone"
 					color={COLORS.phone}
 					info="(438) 493-4734"
+					country="CA"
 				/>
 			</a>
 			<a href="tel:+33781836232">
@@ -62,6 +63,7 @@ function Footer() {
 					imgName="phone"
 					color={COLORS.phone}
 					info="07 81 83 62 32"
+					country="FR"
 				/>
 			</a>
 		</footer>

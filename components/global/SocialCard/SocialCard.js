@@ -19,6 +19,13 @@ function SocialCard({ ...props }) {
 				>
 					<img src={`./pictos/${props.imgName}.svg`} />
 				</div>
+				{props.country ? (
+					<div className={classes.Country}>
+						<p>{props.country}</p>
+					</div>
+				) : (
+					''
+				)}
 				<div className={classes.SocialInfo}>
 					<p>{props.info}</p>
 				</div>
