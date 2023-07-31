@@ -97,3 +97,55 @@
 	font-weight: 600;
 	text-decoration: none;
 }
+
+@media screen and (min-width: 641px) {
+	.Header {
+		padding: 0 var(--3x);
+	}
+}
+
+@media screen and (min-width: 1008px) {
+	.Header {
+		padding: 0 var(--4x);
+	}
+
+	.Header .Menu .Burger {
+		display: none;
+	}
+
+	.Header .Menu .Overlay {
+		position: relative;
+		width: 100%;
+		right: 0;
+		height: auto;
+		background: transparent;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.Header .Menu.Open .Overlay {
+		right: 0;
+		background: rgba(23, 44, 102, 0.2);
+	}
+
+	.Header .Overlay nav {
+		width: 100%;
+		height: auto;
+		border-left: none;
+		padding: 0;
+	}
+
+	.Overlay nav .Cross {
+		display: none;
+	}
+
+	.Overlay nav ul li {
+		margin: 0 0 0 var(--2x);
+		display: inline-block;
+	}
+
+	.Overlay nav ul li a:hover {
+		text-decoration: underline;
+	}
+}
