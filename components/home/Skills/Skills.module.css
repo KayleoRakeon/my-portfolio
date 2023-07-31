@@ -7,6 +7,17 @@
 	margin: 0 0 var(--4x) 0;
 }
 
+.Skills .SectionTitle {
+	width: 100%;
+	padding: var(--3x) var(--x);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--primary);
+	border: 3px solid var(--dark);
+}
+
 .SkillsContainer {
 	width: 100%;
 	background: var(--background);
@@ -30,4 +41,42 @@
 
 .SkillsContainer .Dev {
 	gap: var(--2x);
+}
+
+@media screen and (min-width: 1008px) {
+	.Skills {
+		max-width: 1200px;
+		position: relative;
+		display: block;
+		margin: 0 auto var(--4x) auto;
+	}
+
+	.SkillsContainer {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		padding: var(--4x) var(--2x) var(--2x) var(--2x);
+		transform: translateY(0);
+	}
+
+	.SkillsContainer .Dev,
+	.SkillsContainer .Design {
+		width: 100%;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+	}
+
+	.SkillsContainer .Dev {
+		gap: var(--4x);
+		margin-bottom: var(--2x);
+	}
+
+	.Skills .SectionTitle {
+		width: 500px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		transform: translate(50px, -70%);
+	}
 }

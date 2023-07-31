@@ -24,7 +24,13 @@ function SectionTitle({ ...props }) {
 				className={
 					props.label === 'à propos' || props.label === 'me contacter'
 						? classes.Square + ' ' + classes.Title
-						: classes.Absolute + ' ' + classes.Title
+						: classes.Absolute +
+						  ' ' +
+						  classes.Title +
+						  ' ' +
+						  (props.label === 'expertise'
+								? classes.Skills
+								: classes.LastProject)
 				}
 			>
 				<h2>{props.label}</h2>

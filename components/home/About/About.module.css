@@ -39,11 +39,10 @@
 	.About {
 		width: 100%;
 		max-width: 1200px;
-		margin: 0 auto var(--4x) auto;
+		margin: 0 auto calc(var(--4x) * 2) auto;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-bottom: var(--4x);
 	}
 
 	.Content {

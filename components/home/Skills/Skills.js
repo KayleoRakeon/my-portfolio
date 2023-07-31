@@ -50,7 +50,9 @@ function Skills() {
 
 	return (
 		<section id="skills" className={classes.Skills}>
-			<SectionTitle label="expertise" shape="rectangle" />
+			<article className={classes.SectionTitle}>
+				<h2>expertise</h2>
+			</article>
 			<article className={classes.SkillsContainer}>
 				<div className={classes.Dev}>
 					{skillsDatas.dev.map((skill, key) => (
