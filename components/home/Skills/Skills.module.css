@@ -16,6 +16,7 @@
 	align-items: center;
 	background: var(--primary);
 	border: 3px solid var(--dark);
+	font-size: 22px;
 }
 
 .SkillsContainer {
@@ -48,7 +49,7 @@
 		max-width: 1200px;
 		position: relative;
 		display: block;
-		margin: 0 auto var(--4x) auto;
+		margin: 0 auto calc(var(--5x) * 2) auto;
 	}
 
 	.SkillsContainer {

@@ -30,3 +30,9 @@
 .Skill > p span {
 	display: block;
 }
+
+@media screen and (min-width: 1008px) {
+	.Skill > p {
+		font-size: 18px;
+	}
+}
