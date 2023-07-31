@@ -33,7 +33,7 @@
 }
 
 .ProjectInfos .Description {
-	margin: var(--x) 0 var(--2x) 0;
+	margin: var(--x) 0;
 }
 
 .ProjectInfos h3 {

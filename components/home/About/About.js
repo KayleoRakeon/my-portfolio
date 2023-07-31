@@ -29,9 +29,10 @@ function About() {
 					</p>
 				</div>
 				<Button
-					label="Me contacter"
-					target="#contact"
-					align="center"
+					label="Télécharger mon CV"
+					target="/cv/cv-benjamin-bourgouin.pdf"
+					align="left"
+					download={true}
 				/>
 			</article>
 		</section>

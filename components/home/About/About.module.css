@@ -12,15 +12,15 @@
 }
 
 .Content .Quote p:first-child {
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: 700;
 	font-style: italic;
 }
 .Content .Quote p:last-child {
-	font-size: 24px;
-	text-transform: uppercase;
+	font-size: 22px;
+	text-transform: capitalize;
 	letter-spacing: 1px;
-	padding: 0 0 0 var(--2x);
+	text-align: right;
 }
 
 .Content .AboutMe {

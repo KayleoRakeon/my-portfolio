@@ -33,11 +33,11 @@ function LastProject() {
 							<p key={key}>{paragraph}</p>
 						))}
 					</div>
-					<Button
+					{/* <Button
 						label="plus de détails"
 						target={lastProjectDatas.link}
 						align="left"
-					/>
+					/> */}
 				</div>
 				<div className={classes.ImageContainer}>
 					<Image
