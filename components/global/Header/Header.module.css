@@ -134,10 +134,13 @@
 	}
 
 	.Header .Overlay nav {
+		position: relative;
+		right: 0;
 		width: 100%;
 		height: auto;
 		border-left: none;
 		padding: 0;
+		transition: none;
 	}
 
 	.Overlay nav .Cross {
