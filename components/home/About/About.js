@@ -21,10 +21,11 @@ function About() {
 				<div className={classes.AboutMe}>
 					<p>
 						Passionné par le grand univers du monde numérique, je suis
-						Analyste Développeur et Designer Numérique. Faire preuve
-						de rigueur et accorder de l&apos;attention aux détails
-						sont deux qualités que je met en application chaque jour,
-						en particulier dans mes travaux.
+						<strong>Analyste Développeur</strong> et{' '}
+						<strong>Designer Numérique</strong>. Faire preuve de
+						rigueur et accorder de l&apos;attention aux détails sont
+						deux qualités que je met en application chaque jour, en
+						particulier dans mes travaux.
 					</p>
 					<p>
 						Mes messages sont toujours ouverts, n&apos;hésite pas à me
@@ -37,6 +38,7 @@ function About() {
 					target="/cv/cv-benjamin-bourgouin.pdf"
 					align="left"
 					download={true}
+					title="Télecharge mon CV"
 				/>
 			</article>
 		</section>

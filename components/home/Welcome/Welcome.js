@@ -15,7 +15,12 @@ function Welcome() {
 				<h1>
 					hey salut,<span>moi c&apos;est benjamin !</span>
 				</h1>
-				<Button label="Qui ça ?" target="#about" align="center" />
+				<Button
+					label="Qui ça ?"
+					target="#about"
+					align="center"
+					title="Découvre qui je suis | Benjamin Bourgouin"
+				/>
 			</article>
 		</section>
 	);
