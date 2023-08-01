@@ -10,9 +10,6 @@
 
 @media screen and (min-width: 1008px) {
 	.Info {
-		position: absolute;
-		left: 0;
-		top: calc(var(--3x) * -1);
-		margin: 0;
+		margin: 0 0 var(--x) 0;
 	}
 }

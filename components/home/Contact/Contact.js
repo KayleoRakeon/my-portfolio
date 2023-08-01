@@ -67,90 +67,93 @@ function Contact() {
 
 	return (
 		<section id="contact" className={classes.Contact}>
-			<SectionTitle label="me contacter" shape="rectangle" />
+			<article className={classes.SectionTitle}>
+				<h2>me contacter</h2>
+			</article>
+			<article className={classes.Form}>
+				{errors.name || errors.email || errors.message ? (
+					<Info
+						label="Veuillez remplir tous les champs du formulaire."
+						type="error"
+					/>
+				) : (
+					''
+				)}
 
-			{errors.name || errors.email || errors.message ? (
-				<Info
-					label="Veuillez remplir tous les champs du formulaire."
-					type="error"
-				/>
-			) : (
-				''
-			)}
+				{formError ? (
+					<Info label={formError.message} type="error" />
+				) : (
+					''
+				)}
 
-			{formError ? (
-				<Info label={formError.message} type="error" />
-			) : (
-				''
-			)}
-
-			{formSuccess ? (
-				<Info type="success" label={formSuccess.message} />
-			) : (
-				<form onSubmit={handleSubmit(formSubmittedHandler)}>
-					<div className={classes.FormInput}>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							placeholder="nom"
-							pattern="^(?! *$)[A-Za-zÀ-ÖØ-öø-ÿ\- ]+$"
-							{...register('name', {
-								required: true,
-							})}
-						/>
-					</div>
-					<div className={classes.FormInput}>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							placeholder="ton.courriel@mail.com"
-							pattern="^(?! *$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-							{...register('email', {
-								required: true,
-							})}
-						/>
-					</div>
-					<div className={classes.FormInput}>
-						<textarea
-							id="message"
-							name="message"
-							placeholder="message"
-							pattern="(?! *$).+"
-							rows={5}
-							{...register('message', {
-								required: true,
-							})}
-						></textarea>
-					</div>
-					<div className={classes.FormInput}>
-						{isLoading ? (
-							<div
-								style={{
-									width: '100%',
-									display: 'flex',
-									justifyContent: 'center',
-								}}
-							>
-								<SyncLoader
-									size={15}
-									thickness={10}
-									speed={25}
-									color="#001858"
-								/>
-							</div>
-						) : (
-							<Button
-								label="envoyer"
-								submit={true}
-								target=""
-								align="center"
+				{formSuccess ? (
+					<Info type="success" label={formSuccess.message} />
+				) : (
+					<form onSubmit={handleSubmit(formSubmittedHandler)}>
+						<div className={classes.FormInput}>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="nom"
+								pattern="^(?! *$)[A-Za-zÀ-ÖØ-öø-ÿ\- ]+$"
+								{...register('name', {
+									required: true,
+								})}
 							/>
-						)}
-					</div>
-				</form>
-			)}
+						</div>
+						<div className={classes.FormInput}>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="ton.courriel@mail.com"
+								pattern="^(?! *$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+								{...register('email', {
+									required: true,
+								})}
+							/>
+						</div>
+						<div className={classes.FormInput}>
+							<textarea
+								id="message"
+								name="message"
+								placeholder="message"
+								pattern="(?! *$).+"
+								rows={5}
+								{...register('message', {
+									required: true,
+								})}
+							></textarea>
+						</div>
+						<div className={classes.FormInput}>
+							{isLoading ? (
+								<div
+									style={{
+										width: '100%',
+										display: 'flex',
+										justifyContent: 'center',
+									}}
+								>
+									<SyncLoader
+										size={15}
+										thickness={10}
+										speed={25}
+										color="#001858"
+									/>
+								</div>
+							) : (
+								<Button
+									label="envoyer"
+									submit={true}
+									target=""
+									align="center"
+								/>
+							)}
+						</div>
+					</form>
+				)}
+			</article>
 		</section>
 	);
 }

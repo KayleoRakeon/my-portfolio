@@ -7,6 +7,19 @@
 	margin-bottom: var(--4x);
 }
 
+.About .SectionTitle {
+	width: 100%;
+	background: var(--primary);
+	border: solid 3px var(--dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--3x) var(--2x);
+	box-sizing: border-box;
+	margin: 0 0 var(--x) 0;
+	font-size: 22px;
+}
+
 .Content {
 	margin-top: var(--x);
 }
@@ -45,9 +58,13 @@
 		align-items: flex-start;
 	}
 
+	.About .SectionTitle {
+		width: 45%;
+	}
+
 	.Content {
 		margin-top: 0;
-		width: 50%;
+		width: 55%;
 		margin-left: var(--2x);
 	}
 
