@@ -2,7 +2,6 @@
 import classes from './Skills.module.css';
 
 // Composants
-import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 import Skill from '@/components/global/Skill/Skill';
 
 function Skills() {
