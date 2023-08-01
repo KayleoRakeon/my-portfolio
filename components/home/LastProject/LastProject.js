@@ -13,7 +13,7 @@ function LastProject() {
 		image: 'kadaboo_1.jpg',
 		description: [
 			'Kadaboo est une application destinée aux proffessionnel.le.s du milieu de l’éducation à la petite enfance. Le but de Kadaboo est de se comporter comme une banque d’activité pédagogique à réaliser avec les enfants, en fonction de différents thèmes, groupes d’âges, et/ou buts pédagogiques.',
-			'L’idée principale de Kadaboo part d’un constat : Les éducateur.ice.s prennent souvent sur leur temps libre pour trouver des idées d’activités pertinentes et ludiques à réaliser avec les enfants. Kadaboo leur permettrait désormais d’écourter ce temps de recherche et ainsi passer du temps de qualité avec leurs proches. ',
+			'L’idée principale de Kadaboo part d’un constat: Les éducateur.ice.s prennent souvent sur leur temps libre pour trouver des idées d’activités pertinentes et ludiques à réaliser avec les enfants. Kadaboo leur permettrait désormais d’écourter ce temps de recherche et ainsi passer du temps de qualité avec leurs proches. ',
 		],
 		link: '#',
 	};
@@ -51,7 +51,7 @@ function LastProject() {
 			</article>
 			<article className={classes.More}>
 				<Button
-					label="Voir tous mes projets"
+					label="Voir tous mes&nbsp;projets"
 					target="/projets"
 					align="center"
 				/>
