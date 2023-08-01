@@ -34,17 +34,13 @@ function LastProject() {
 							<p key={key}>{paragraph}</p>
 						))}
 					</div>
-					<Button
-						label="plus de détails"
-						target={lastProjectDatas.link}
-						align="left"
-					/>
+					<a href={lastProjectDatas.link}>plus de détails</a>
 				</div>
 				<div className={classes.ImageContainer}>
 					<Image
 						src={`/projects/${projectFolder}/${lastProjectDatas.image}`}
-						width={500}
-						height={500}
+						width={1080}
+						height={1080}
 					/>
 				</div>
 			</article>

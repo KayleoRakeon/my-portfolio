@@ -38,11 +38,6 @@
 	height: auto;
 	border: solid 6px var(--dark);
 	box-sizing: border-box;
-	filter: sepia(0.2) saturate(0.9);
-	transition: all 50ms ease-out;
-}
-.ImageContainer img:hover {
-	filter: sepia(0) saturate(1);
 }
 
 .ProjectInfos .Description {
@@ -60,6 +55,15 @@
 }
 .ProjectInfos p:not(:last-child) {
 	margin: 0 0 var(--sm);
+}
+
+.LastProjectContainer a {
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--dark);
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: solid 2px var(--dark);
 }
 
 .More {
@@ -101,11 +105,7 @@
 	}
 
 	.ImageContainer img {
-		filter: sepia(0.1) saturate(0.8);
 		transition: all 50ms ease-out;
-	}
-	.ImageContainer img:hover {
-		filter: sepia(0) saturate(1);
 	}
 
 	.ProjectInfos {
@@ -123,6 +123,13 @@
 	}
 	.ProjectInfos p:not(:last-child) {
 		margin: 0 0 var(--sm);
+	}
+
+	.LastProjectContainer a {
+		transition: all 0.3s ease-out;
+	}
+	.LastProjectContainer a:hover {
+		border-bottom: solid 5px var(--dark);
 	}
 
 	.More {
