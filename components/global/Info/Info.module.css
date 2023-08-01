@@ -7,3 +7,12 @@
 	font-weight: 700;
 	margin: var(--2x) 0 0 0;
 }
+
+@media screen and (min-width: 1008px) {
+	.Info {
+		position: absolute;
+		left: 0;
+		top: calc(var(--3x) * -1);
+		margin: 0;
+	}
+}
