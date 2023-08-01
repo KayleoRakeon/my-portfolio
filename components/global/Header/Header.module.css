@@ -41,10 +41,6 @@
 	top: 0;
 	right: -100%;
 	background: rgba(23, 44, 102, 0);
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
-	transition: all 0.3s ease-out;
 	z-index: 10;
 }
 
@@ -54,12 +50,20 @@
 }
 
 .Header .Overlay nav {
-	width: 150px;
+	position: absolute;
+	top: 0;
+	right: -200px;
+	width: 200px;
 	height: 100%;
 	background: var(--background);
 	border-left: solid 3px var(--dark);
 	padding: var(--2x) var(--x);
 	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+}
+
+.Header .Menu.Open .Overlay nav {
+	right: 0;
 }
 
 .Overlay nav .Cross {

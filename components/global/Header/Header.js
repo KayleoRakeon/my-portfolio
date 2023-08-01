@@ -47,7 +47,7 @@ function Header() {
 								<Link href="/projets">projets</Link>
 							</li>
 							<li>
-								<Link href="/#contact">contact</Link>
+								<Link href="/#contact">me contacter</Link>
 							</li>
 						</ul>
 					</nav>
