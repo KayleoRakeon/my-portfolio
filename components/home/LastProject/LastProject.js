@@ -34,7 +34,7 @@ function LastProject() {
 							<p key={key}>{paragraph}</p>
 						))}
 					</div>
-					<a href={lastProjectDatas.link}>plus de détails</a>
+					{/* <a href={lastProjectDatas.link}>plus de détails</a> */}
 				</div>
 				<div className={classes.ImageContainer}>
 					<Image
