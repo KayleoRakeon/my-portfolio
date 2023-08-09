@@ -7,38 +7,6 @@
 	margin-bottom: var(--4x);
 }
 
-.About .Title {
-	width: 100%;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	gap: var(--x);
-}
-
-.Title div {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.Title div:first-child {
-	background: var(--primary);
-	border: solid 3px var(--dark);
-	padding: var(--3x) var(--x);
-	box-sizing: border-box;
-}
-
-.Title h2 {
-	font-size: 28px;
-}
-
-.Title div:last-child img {
-	transform: rotate(90deg);
-	width: 25px;
-}
-
 .Content {
 	margin-top: var(--x);
 }

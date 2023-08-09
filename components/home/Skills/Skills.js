@@ -2,7 +2,7 @@
 import classes from './Skills.module.css';
 
 function Skills() {
-	return <h1>Skills</h1>;
+	return <section id="skills" className={classes.Skills}></section>;
 }
 
 export default Skills;

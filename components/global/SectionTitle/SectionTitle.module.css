@@ -1,0 +1,30 @@
+.SectionTitle {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--x);
+}
+
+.SectionTitle div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SectionTitle div:first-child {
+	background: var(--primary);
+	border: solid 3px var(--dark);
+	padding: var(--3x) var(--x);
+	box-sizing: border-box;
+}
+
+.SectionTitle h2 {
+	font-size: 28px;
+}
+
+.SectionTitle div:last-child img {
+	transform: rotate(90deg);
+	width: 25px;
+}
