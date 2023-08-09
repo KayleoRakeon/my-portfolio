@@ -2,7 +2,11 @@
 import classes from './About.module.css';
 
 function About() {
-	return <h1>About</h1>;
+	return (
+		<section id="about">
+			<h2>About</h2>
+		</section>
+	);
 }
 
 export default About;

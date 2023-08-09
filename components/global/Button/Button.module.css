@@ -1,0 +1,30 @@
+.Link {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.Button {
+	padding: var(--sm) var(--x);
+	box-sizing: border-box;
+	background: var(--background);
+	border: solid 3px var(--dark);
+	font-family: var(--main);
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	box-shadow: 0 0 0 var(--accent);
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+
+.Button:hover {
+	transform: translate(-8px, -8px);
+	box-shadow: 8px 8px 0 var(--accent);
+}
+.Button:active {
+	transform: translate(-4px, -4px);
+	box-shadow: 4px 4px 0 var(--accent);
+}
