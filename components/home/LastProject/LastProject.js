@@ -24,7 +24,9 @@ function LastProject() {
 
 	return (
 		<section id="lastProject" className={classes.LastProject}>
-			<SectionTitle label="dernier projet" shape="rectangle" />
+			<article className={classes.SectionTitle}>
+				<h2>dernier projet</h2>
+			</article>
 			<article className={classes.LastProjectContainer}>
 				<div className={classes.ProjectInfos}>
 					<h3>{lastProjectDatas.title}</h3>
@@ -33,11 +35,11 @@ function LastProject() {
 							<p key={key}>{paragraph}</p>
 						))}
 					</div>
-					{/* <Button
+					<Button
 						label="plus de détails"
 						target={lastProjectDatas.link}
 						align="left"
-					/> */}
+					/>
 				</div>
 				<div className={classes.ImageContainer}>
 					<Image

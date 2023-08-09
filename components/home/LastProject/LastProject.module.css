@@ -2,6 +2,18 @@
 	margin: 0 0 var(--4x) 0;
 }
 
+.LastProject .SectionTitle {
+	width: 100%;
+	padding: var(--3x) var(--2x);
+	box-sizing: border-box;
+	background: var(--primary);
+	border: solid 3px var(--dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+}
+
 .LastProjectContainer {
 	width: 100%;
 	background: var(--background);
@@ -56,4 +68,68 @@
 	padding: var(--2x);
 	box-sizing: border-box;
 	transform: translateY(-6px);
+}
+
+@media screen and (min-width: 1008px) {
+	.LastProject {
+		max-width: 1200px;
+		position: relative;
+		margin: var(--x) auto calc(var(--5x) * 2) auto;
+	}
+
+	.LastProject .SectionTitle {
+		width: 500px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		transform: translate(-50px, -70%);
+	}
+
+	.LastProjectContainer {
+		padding: var(--2x) var(--2x) var(--3x) var(--2x);
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: stretch;
+		transform: translateY(0);
+	}
+
+	.LastProjectContainer .ImageContainer {
+		width: 40%;
+		margin: 0;
+	}
+
+	.ImageContainer img {
+		filter: sepia(0.8) saturate(0.2);
+		transition: all 50ms ease-out;
+	}
+	.ImageContainer img:hover {
+		filter: sepia(0) saturate(1);
+	}
+
+	.ProjectInfos {
+		width: 60%;
+		padding: var(--2x) var(--2x) 0 0;
+		box-sizing: border-box;
+	}
+
+	.ProjectInfos h3 {
+		font-size: 30px;
+	}
+
+	.ProjectInfos p {
+		font-size: 18px;
+	}
+	.ProjectInfos p:not(:last-child) {
+		margin: 0 0 var(--sm);
+	}
+
+	.More {
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: var(--2x) var(--3x);
+		transform: translate(50px, 70%);
+	}
 }

@@ -39,7 +39,7 @@
 	.About {
 		width: 100%;
 		max-width: 1200px;
-		margin: 0 auto calc(var(--4x) * 2) auto;
+		margin: var(--x) auto calc(var(--5x) * 2) auto;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
