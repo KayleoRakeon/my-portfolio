@@ -11,21 +11,21 @@ function About() {
 			<SectionTitle label="à propos" shape="rectangle" />
 			<article className={classes.Content}>
 				<div className={classes.Quote}>
-					<p>" Le diable se cache dans les détails. "</p>
+					<p>&quot; Le diable se cache dans les détails. &quot;</p>
 					<p>— Nietzsche</p>
 				</div>
 				<div className={classes.AboutMe}>
 					<p>
 						Passionné par le grand univers du monde numérique, je suis
 						Analyste Développeur et Designer Numérique. Faire preuve
-						de rigueur et accorder de l'attention aux détails sont
-						deux qualités que je met en application chaque jour, en
-						particulier dans mes travaux.
+						de rigueur et accorder de l&apos;attention aux détails
+						sont deux qualités que je met en application chaque jour,
+						en particulier dans mes travaux.
 					</p>
 					<p>
-						Mes messages sont toujours ouverts, n'hésite pas à me
-						contacter pour qu'on fasse connaissance et qu'on discute
-						de ton projet !
+						Mes messages sont toujours ouverts, n&apos;hésite pas à me
+						contacter pour qu&apos;on fasse connaissance et qu&apos;on
+						discute de ton projet !
 					</p>
 				</div>
 				<Button

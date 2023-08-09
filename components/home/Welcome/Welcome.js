@@ -13,7 +13,7 @@ function Welcome() {
 			</div>
 			<article>
 				<h1>
-					hey salut,<span>moi c'est benjamin !</span>
+					hey salut,<span>moi c&apos;est benjamin !</span>
 				</h1>
 				<Button label="Qui ça ?" target="#about" align="center" />
 			</article>

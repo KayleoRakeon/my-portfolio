@@ -10,6 +10,7 @@
 
 .Header > img {
 	width: 200px;
+	height: auto;
 	padding: var(--x) var(--2x) var(--x) 0;
 	border-right: solid 3px var(--dark);
 }
