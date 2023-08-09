@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 // Composant
 import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 			<Header />
 			<Component {...pageProps} />
+			<Footer />
 		</>
 	);
 }
