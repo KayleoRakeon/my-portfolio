@@ -48,6 +48,10 @@
 	margin: 0 0 var(--x) 0;
 }
 
+.About strong {
+	font-weight: 400;
+}
+
 @media screen and (min-width: 1008px) {
 	.About {
 		width: 100%;
