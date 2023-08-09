@@ -11,13 +11,27 @@ function SectionTitle({ ...props }) {
 
 	return (
 		<article className={classes.SectionTitle}>
-			<div style={size}>
+			{props.label === 'me contacter' ? (
+				<div className={classes.MeContacter}>
+					<Image src="/pictos/arrow.png" width={50} height={30} />
+				</div>
+			) : (
+				''
+			)}
+
+			<div
+				style={size}
+				className={
+					props.label === 'à propos' || props.label === 'me contacter'
+						? classes.Square + ' ' + classes.Title
+						: classes.Absolute + ' ' + classes.Title
+				}
+			>
 				<h2>{props.label}</h2>
 			</div>
 
-			{props.label === 'à propos' ||
-			props.label === 'me contacter' ? (
-				<div>
+			{props.label === 'à propos' ? (
+				<div className={classes.APropos}>
 					<Image src="/pictos/arrow.png" width={50} height={30} />
 				</div>
 			) : (
