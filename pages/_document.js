@@ -1,9 +1,6 @@
 // Librairie
 import { Html, Head, Main, NextScript } from 'next/document';
 
-// Composants
-import MyApp from './_app';
-
 export default function MyDocument() {
 	return (
 		<Html lang="fr">

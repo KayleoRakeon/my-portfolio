@@ -49,7 +49,7 @@
 	background: rgba(23, 44, 102, 0.2);
 }
 
-.Header .Overlay nav {
+.Header .Overlay .NavContainer {
 	position: absolute;
 	top: 0;
 	right: -200px;
@@ -57,16 +57,23 @@
 	height: 100%;
 	background: var(--background);
 	border-left: solid 3px var(--dark);
-	padding: var(--2x) var(--x);
-	box-sizing: border-box;
 	transition: all 0.3s ease-out;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
-.Header .Menu.Open .Overlay nav {
+.Header .Menu.Open .Overlay .NavContainer {
 	right: 0;
 }
 
-.Overlay nav .Cross {
+.NavContainer nav {
+	padding: var(--2x) var(--x);
+	box-sizing: border-box;
+}
+
+.NavContainer nav .Cross {
 	width: 25px;
 	height: 25px;
 	margin-bottom: var(--2x);
@@ -87,19 +94,56 @@
 	transform: rotate(-45deg) translateY(-2px);
 }
 
-.Overlay nav ul {
+.NavContainer nav ul {
 	list-style: none;
 }
 
-.Overlay nav ul li {
+.NavContainer nav ul li {
 	margin-bottom: var(--x);
 }
 
-.Overlay nav ul li a {
+.NavContainer nav ul li a {
 	color: var(--dark);
 	font-size: 24px;
 	font-weight: 600;
 	text-decoration: none;
+}
+
+.NavContainer .LangSelection {
+	width: 100%;
+	display: block;
+	border-top: solid 3px var(--dark);
+	padding: var(--2x) var(--x);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.LangSelection .SelectorContainer {
+	width: 60px;
+	height: 15px;
+	background: var(--secondary);
+	border-radius: 1000px;
+	border: solid 3px var(--dark);
+	position: relative;
+}
+
+.SelectorContainer .Indicator {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	transform: translateY(-50%);
+	background: var(--primary);
+	border-radius: 100%;
+	border: solid 3px var(--dark);
+	transition: all 0.2s;
+}
+
+.LangSelection p {
+	font-weight: 500;
+	font-size: 18px;
 }
 
 @media screen and (min-width: 641px) {

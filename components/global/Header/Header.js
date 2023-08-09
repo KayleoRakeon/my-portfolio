@@ -5,13 +5,17 @@ import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../../public/logo/logo_light_typo.svg';
 
-function Header() {
+function Header({ ...props }) {
 	// State
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	// Methode
 	const onMenuClickedHandler = () => {
 		setIsMenuOpen(!isMenuOpen);
+	};
+
+	const onLangSelectionClickHandler = () => {
+		props.setLang(props.lang === 'FR' ? 'EN' : 'FR');
 	};
 
 	return (
@@ -31,26 +35,47 @@ function Header() {
 					<span></span>
 				</div>
 				<div className={classes.Overlay}>
-					<nav>
-						<div
-							className={classes.Cross}
-							onClick={onMenuClickedHandler}
-						>
-							<span></span>
-							<span></span>
+					<div className={classes.NavContainer}>
+						<nav>
+							<div
+								className={classes.Cross}
+								onClick={onMenuClickedHandler}
+							>
+								<span></span>
+								<span></span>
+							</div>
+							<ul>
+								<li>
+									<Link href="/">accueil</Link>
+								</li>
+								<li>
+									<Link href="/projets">projets</Link>
+								</li>
+								<li>
+									<Link href="/#contact">me contacter</Link>
+								</li>
+							</ul>
+						</nav>
+
+						<div className={classes.LangSelection}>
+							<p>FR</p>
+							<div
+								className={classes.SelectorContainer}
+								onClick={onLangSelectionClickHandler}
+							>
+								<div
+									className={classes.Indicator}
+									style={{
+										left:
+											props.lang === 'FR'
+												? '-10px'
+												: 'calc(100% - 26px)',
+									}}
+								></div>
+							</div>
+							<p>EN</p>
 						</div>
-						<ul>
-							<li>
-								<Link href="/">accueil</Link>
-							</li>
-							<li>
-								<Link href="/projets">projets</Link>
-							</li>
-							<li>
-								<Link href="/#contact">me contacter</Link>
-							</li>
-						</ul>
-					</nav>
+					</div>
 				</div>
 			</div>
 		</header>
