@@ -1,7 +1,7 @@
 .Projects {
 	width: 100%;
 	height: calc(100vh - 108px);
-	background-image: url('/backgrounds/welcome_left_bg.jpg');
+	background-image: url('/backgrounds/welcome_left_bg.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9,6 +9,8 @@
 	align-items: center;
 	justify-content: center;
 	border-bottom: solid 3px var(--dark);
+	padding: 0 var(--2x);
+	box-sizing: border-box;
 	margin-bottom: var(--4x);
 }
 
