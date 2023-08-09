@@ -20,7 +20,7 @@ function About() {
 				</div>
 				<div className={classes.AboutMe}>
 					<p>
-						Passionné par le grand univers du monde numérique, je suis
+						Passionné par le grand univers du monde numérique, je suis{' '}
 						<strong>Analyste Développeur</strong> et{' '}
 						<strong>Designer Numérique</strong>. Faire preuve de
 						rigueur et accorder de l&apos;attention aux détails sont
