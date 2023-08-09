@@ -3,8 +3,6 @@
 	padding: var(--sm) var(--x);
 	box-sizing: border-box;
 	border: solid 3px var(--dark);
-	background: var(--form-input-wrong);
-	color: var(--background);
 	font-size: 18px;
 	font-weight: 700;
 	margin: var(--2x) 0 0 0;
