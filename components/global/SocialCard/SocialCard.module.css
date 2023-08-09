@@ -23,13 +23,19 @@
 	box-shadow: 4px 4px 0 var(--accent);
 }
 
-.Icon {
+.Icon,
+.Country {
 	width: var(--2x);
 	height: var(--2x);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-right: solid 3px var(--dark);
+}
+
+.Country {
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .SocialInfo {
