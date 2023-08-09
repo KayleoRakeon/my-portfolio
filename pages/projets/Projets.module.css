@@ -1,0 +1,24 @@
+.Projects {
+	width: 100%;
+	height: calc(100vh - 108px);
+	background-image: url('/backgrounds/welcome_left_bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: solid 3px var(--dark);
+	margin-bottom: var(--4x);
+}
+
+.Projects p {
+	text-align: center;
+	width: auto;
+	padding: var(--2x);
+	box-sizing: border-box;
+	font-size: 40px;
+	font-weight: 700;
+	background: var(--background);
+	border: solid 3px var(--dark);
+}
