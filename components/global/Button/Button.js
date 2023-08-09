@@ -24,7 +24,13 @@ function Button({ ...props }) {
 				justifyContent,
 			}}
 		>
-			<button className={classes.Button}>{props.label}</button>
+			{!props.submit ? (
+				<button className={classes.Button}>{props.label}</button>
+			) : (
+				<button className={classes.Button} type="submit">
+					{props.label}
+				</button>
+			)}
 		</a>
 	);
 }
