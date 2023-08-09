@@ -1,6 +1,6 @@
 .Container {
 	width: 100%;
-	background-image: url('../../public/backgrounds/main-background.jpg');
+	background-image: url('../../public/backgrounds/main-background.svg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: left bottom;

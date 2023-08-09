@@ -44,12 +44,12 @@
 	height: 100%;
 }
 .Welcome .Background div.Left {
-	background-image: url('../../../public/backgrounds/welcome_left_bg.jpg');
+	background-image: url('../../../public/backgrounds/welcome_left_bg.svg');
 	background-size: cover;
 	background-position: center center;
 	border-right: solid 3px var(--dark);
 }
 .Welcome .Background div.Right {
-	background-image: url('../../../public/backgrounds/welcome_right_bg.jpg');
+	background-image: url('../../../public/backgrounds/welcome_right_bg.svg');
 	background-size: cover;
 }
