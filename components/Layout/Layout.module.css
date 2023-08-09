@@ -1,0 +1,9 @@
+.Container {
+	width: 100%;
+	padding: 0 var(--mobile-padding);
+	box-sizing: border-box;
+	background-image: url('../../public/main-background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left bottom;
+}
