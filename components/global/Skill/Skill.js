@@ -10,6 +10,7 @@ function Skill({ ...props }) {
 					src={`/pictos/${props.imgName}.svg`}
 					width={50}
 					height={50}
+					alt={`Pictogramme d'expertise : ${props.label} ${props.spanLabel} | Benjamin Bourgouin`}
 				/>
 			</div>
 			<p>

@@ -22,6 +22,7 @@ function SocialCard({ ...props }) {
 						src={`/pictos/${props.imgName}.svg`}
 						width={20}
 						height={20}
+						alt="Pictogramme de lien social | Benjamin Bourgouin"
 					/>
 				</div>
 				{props.country ? (
