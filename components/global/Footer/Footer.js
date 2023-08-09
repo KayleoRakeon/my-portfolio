@@ -14,14 +14,14 @@ function Footer() {
 	return (
 		<footer className={classes.Footer}>
 			<a
-				href="https://www.facebook.com/benjamin.bourgouin.webdesigner/"
+				href="https://bento.me/bourgouin-benjamin"
 				target="_blank"
-				title="Contacte-moi sur Facebook | Benjamin Bourgouin"
+				title="Découvre mon Bento.me | Benjamin Bourgouin"
 			>
 				<SocialCard
-					imgName="facebook"
+					imgName="bentome"
 					color={COLORS.social}
-					info="Benjamin Webdesigner"
+					info="Découvre mon Bento.me"
 				/>
 			</a>
 			<a
@@ -32,18 +32,18 @@ function Footer() {
 				<SocialCard
 					imgName="linkedin"
 					color={COLORS.social}
-					info="Benjamin Bourgouin"
+					info="Contacte-moi sur LinkedIn"
 				/>
 			</a>
 			<a
-				href="https://github.com/KayleoRakeon"
+				href="https://github.com/bourgouin-benjamin"
 				target="_blank"
 				title="Visite mon profil GitHub | Benjamin Bourgouin"
 			>
 				<SocialCard
 					imgName="github"
 					color={COLORS.social}
-					info="Benjamin Bourgouin"
+					info="Visite mon profil GitHub"
 				/>
 			</a>
 			<a
