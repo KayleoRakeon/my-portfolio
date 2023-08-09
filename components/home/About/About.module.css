@@ -42,7 +42,7 @@
 
 .Content .AboutMe p {
 	font-family: var(--font-secondary);
-	font-size: 16px;
+	font-size: 18px;
 }
 .Content .AboutMe p:first-child {
 	margin: 0 0 var(--x) 0;
@@ -73,6 +73,6 @@
 	}
 
 	.Content .AboutMe p {
-		font-size: 18px;
+		font-size: 19px;
 	}
 }

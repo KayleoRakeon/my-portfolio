@@ -11,11 +11,9 @@
 	--form-input-correct: #8bdd8e;
 
 	/* fonts */
-	--font-main: 'EB Garamond';
-	--font-secondary: 'Optima';
-	--font-secondary-italic: 'Optima Italic';
-	--font-secondary-medium: 'Optima Medium';
-	--font-secondary-bold: 'Optima Bold';
+	--font-main: 'EB Garamond', serif;
+	--font-secondary: 'Bellefair', sans-serif;
+	--font-secondary-bold: 'Bellefair', sans-serif;
 
 	/* Margin / Padding */
 	--mobile-padding: 20px;

@@ -14,7 +14,8 @@ function About() {
 			<article className={classes.Content}>
 				<div className={classes.Quote}>
 					<p>
-						&quot; Le diable se cache dans les&nbsp;détails. &quot;
+						&quot; Le diable se cache dans
+						les&nbsp;détails.&nbsp;&quot;
 					</p>
 					<p>— Nietzsche</p>
 				</div>
