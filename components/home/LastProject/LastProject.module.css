@@ -29,7 +29,8 @@
 
 .LastProjectContainer .ImageContainer {
 	width: 100%;
-	margin: 0 0 var(--x) 0;
+	margin: 0 auto var(--x) auto;
+	max-width: 400px;
 }
 
 .ImageContainer img {
@@ -100,7 +101,7 @@
 	}
 
 	.ImageContainer img {
-		filter: sepia(0.8) saturate(0.2);
+		filter: sepia(0.2) saturate(0.8);
 		transition: all 50ms ease-out;
 	}
 	.ImageContainer img:hover {
