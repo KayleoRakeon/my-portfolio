@@ -1,0 +1,63 @@
+.About {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.About .Title {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--x);
+}
+
+.Title div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Title div:first-child {
+	background: var(--primary);
+	border: solid 3px var(--dark);
+	padding: var(--3x) var(--x);
+	box-sizing: border-box;
+}
+
+.Title div:last-child img {
+	transform: rotate(90deg);
+	width: 25px;
+}
+
+.Content {
+	margin-top: var(--x);
+}
+
+.Content .Quote p:first-child {
+	font-size: 46px;
+	font-weight: 700;
+	font-style: italic;
+}
+.Content .Quote p:last-child {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 0 0 var(--2x);
+}
+
+.Content .AboutMe {
+	margin: var(--2x) 0 var(--2x) 0;
+}
+
+.Content .AboutMe p {
+	font-family: var(--font-secondary);
+	font-size: 16px;
+}
+.Content .AboutMe p:first-child {
+	margin: 0 0 var(--x) 0;
+}

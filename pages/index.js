@@ -9,10 +9,12 @@ function Home() {
 	return (
 		<main>
 			<Welcome />
-			<About />
-			<Skills />
-			<LastProject />
-			<Contact />
+			<div className="wrapper">
+				<About />
+				<Skills />
+				<LastProject />
+				<Contact />
+			</div>
 		</main>
 	);
 }
