@@ -11,7 +11,9 @@ function About() {
 			<SectionTitle label="à propos" shape="rectangle" />
 			<article className={classes.Content}>
 				<div className={classes.Quote}>
-					<p>&quot; Le diable se cache dans les détails. &quot;</p>
+					<p>
+						&quot; Le diable se cache dans les&nbsp;détails. &quot;
+					</p>
 					<p>— Nietzsche</p>
 				</div>
 				<div className={classes.AboutMe}>
@@ -25,11 +27,11 @@ function About() {
 					<p>
 						Mes messages sont toujours ouverts, n&apos;hésite pas à me
 						contacter pour qu&apos;on fasse connaissance et qu&apos;on
-						discute de ton projet !
+						discute de ton projet&nbsp;!
 					</p>
 				</div>
 				<Button
-					label="Télécharger mon CV"
+					label="Télécharger mon&nbsp;CV"
 					target="/cv/cv-benjamin-bourgouin.pdf"
 					align="left"
 					download={true}
