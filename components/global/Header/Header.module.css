@@ -152,7 +152,7 @@
 	}
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1200px) {
 	.Header {
 		padding: 0 var(--4x);
 	}
@@ -177,7 +177,7 @@
 		background: rgba(23, 44, 102, 0.2);
 	}
 
-	.Header .Overlay nav {
+	.Header .Overlay .NavContainer {
 		position: relative;
 		right: 0;
 		width: 100%;
@@ -185,18 +185,38 @@
 		border-left: none;
 		padding: 0;
 		transition: none;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
-	.Overlay nav .Cross {
+	.NavContainer .Cross {
 		display: none;
 	}
 
-	.Overlay nav ul li {
+	.NavContainer nav {
+		padding: calc(var(--2x) - 13px) var(--2x);
+		width: 100%;
+		border-right: solid 3px var(--dark);
+	}
+
+	.NavContainer nav ul li {
 		margin: 0 0 0 var(--2x);
 		display: inline-block;
 	}
 
-	.Overlay nav ul li a:hover {
+	.NavContainer nav ul li a:hover {
 		text-decoration: underline;
+	}
+
+	.NavContainer .LangSelection {
+		width: auto;
+		border-top: none;
+		padding: 0 var(--x);
+		box-sizing: border-box;
+	}
+
+	.LangSelection .SelectorContainer {
+		margin: 0 15px;
 	}
 }
