@@ -7,13 +7,13 @@ import Contact from './contact';
 
 function Home() {
 	return (
-		<>
+		<main>
 			<Welcome />
 			<About />
 			<Skills />
 			<LastProject />
 			<Contact />
-		</>
+		</main>
 	);
 }
 
