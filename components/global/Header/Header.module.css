@@ -208,7 +208,8 @@
 		margin: 0 0 0 var(--2x);
 		display: inline-block;
 	}
-	ainer nav ul li a:hover {
+
+	.NavContainer nav ul li a:hover {
 		text-decoration: underline;
 	}
 
