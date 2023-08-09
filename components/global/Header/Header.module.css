@@ -200,12 +200,15 @@
 		border-right: solid 3px var(--dark);
 	}
 
-	.NavContainer nav ul li {
+	.Overlay nav .Cross {
+		display: none;
+	}
+
+	.Overlay nav ul li {
 		margin: 0 0 0 var(--2x);
 		display: inline-block;
 	}
-
-	.NavContainer nav ul li a:hover {
+	ainer nav ul li a:hover {
 		text-decoration: underline;
 	}
 

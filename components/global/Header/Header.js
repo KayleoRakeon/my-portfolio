@@ -46,13 +46,21 @@ function Header({ ...props }) {
 							</div>
 							<ul>
 								<li>
-									<Link href="/">accueil</Link>
+									<Link href="/">
+										{props.lang === 'FR' ? 'accueil' : 'home'}
+									</Link>
 								</li>
 								<li>
-									<Link href="/projets">projets</Link>
+									<Link href="/projets">
+										{props.lang === 'FR' ? 'projets' : 'projects'}
+									</Link>
 								</li>
 								<li>
-									<Link href="/#contact">me contacter</Link>
+									<Link href="/#contact">
+										{props.lang === 'FR'
+											? 'me contacter'
+											: 'contact me'}
+									</Link>
 								</li>
 							</ul>
 						</nav>
