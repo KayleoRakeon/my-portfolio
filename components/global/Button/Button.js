@@ -23,6 +23,7 @@ function Button({ ...props }) {
 			style={{
 				justifyContent,
 			}}
+			download={props.download}
 		>
 			{!props.submit ? (
 				<button className={classes.Button}>{props.label}</button>
