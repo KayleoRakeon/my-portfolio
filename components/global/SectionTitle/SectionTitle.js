@@ -13,9 +13,14 @@ function SectionTitle({ ...props }) {
 			<div style={size}>
 				<h2>{props.label}</h2>
 			</div>
-			<div>
-				<img src="./pictos/arrow.png" />
-			</div>
+
+			{props.label === 'à propos' ? (
+				<div>
+					<img src="./pictos/arrow.png" />
+				</div>
+			) : (
+				''
+			)}
 		</article>
 	);
 }
