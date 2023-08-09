@@ -22,7 +22,7 @@ function LastProject() {
 		.replaceAll(' ', '');
 
 	return (
-		<section id="lastProject" className={classes.LastProect}>
+		<section id="lastProject" className={classes.LastProject}>
 			<SectionTitle label="dernier projet" shape="rectangle" />
 			<article className={classes.LastProjectContainer}>
 				<div className={classes.ProjectInfos}>
