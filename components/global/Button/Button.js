@@ -27,6 +27,7 @@ function Button({ ...props }) {
 				href={props.target}
 				className={classes.Link}
 				download={props.download}
+				title={`${props.title} | Benjamin Bourgouin`}
 			>
 				{!props.submit ? (
 					<button className={classes.Button}>{props.label}</button>

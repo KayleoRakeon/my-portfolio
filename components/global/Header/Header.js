@@ -16,7 +16,7 @@ function Header() {
 
 	return (
 		<header className={classes.Header}>
-			<Image src={logo} />
+			<Image src={logo} alt="Logo de Benjamin Bourgouin" />
 			<div
 				className={
 					classes.Menu + (isMenuOpen ? ' ' + classes.Open : '')

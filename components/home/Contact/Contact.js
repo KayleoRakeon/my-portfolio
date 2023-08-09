@@ -147,6 +147,7 @@ function Contact() {
 									submit={true}
 									target=""
 									align="center"
+									title="Contacte-moi par courriel"
 								/>
 							)}
 						</div>

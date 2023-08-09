@@ -16,6 +16,7 @@ function Footer() {
 			<a
 				href="https://www.facebook.com/benjamin.bourgouin.webdesigner/"
 				target="_blank"
+				title="Contacte-moi sur Facebook | Benjamin Bourgouin"
 			>
 				<SocialCard
 					imgName="facebook"
@@ -26,6 +27,7 @@ function Footer() {
 			<a
 				href="https://www.linkedin.com/in/benjamin-bourgouin-093421159/"
 				target="_blank"
+				title="Contacte-moi sur LinkedIn | Benjamin Bourgouin"
 			>
 				<SocialCard
 					imgName="linkedin"
@@ -33,7 +35,11 @@ function Footer() {
 					info="Benjamin Bourgouin"
 				/>
 			</a>
-			<a href="https://github.com/KayleoRakeon" target="_blank">
+			<a
+				href="https://github.com/KayleoRakeon"
+				target="_blank"
+				title="Visite mon profil GitHub | Benjamin Bourgouin"
+			>
 				<SocialCard
 					imgName="github"
 					color={COLORS.social}
@@ -43,6 +49,7 @@ function Footer() {
 			<a
 				href="mailto:benjamin.bourgouin.pro@gmail.com"
 				target="_blank"
+				title="Envoi moi un courriel | Benjamin Bourgouin"
 			>
 				<SocialCard
 					imgName="mail"
@@ -50,7 +57,10 @@ function Footer() {
 					info="benjamin.bourgouin.pro@gmail.com"
 				/>
 			</a>
-			<a href="tel:+14384934734">
+			<a
+				href="tel:+14384934734"
+				title="Contacte-moi par téléphone au Québec, Canada | Benjamin Bourgouin"
+			>
 				<SocialCard
 					imgName="phone"
 					color={COLORS.phone}
@@ -58,7 +68,10 @@ function Footer() {
 					country="CA"
 				/>
 			</a>
-			<a href="tel:+33781836232">
+			<a
+				href="tel:+33781836232"
+				title="Contacte-moi par téléphone en France | Benjamin Bourgouin"
+			>
 				<SocialCard
 					imgName="phone"
 					color={COLORS.phone}
