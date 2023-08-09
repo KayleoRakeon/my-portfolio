@@ -2,7 +2,7 @@
 import classes from './Footer.module.css';
 
 // Composant
-import SocialCard from '../../SocialCard/SocialCard';
+import SocialCard from '../SocialCard/SocialCard';
 
 const COLORS = {
 	social: '#8bd3dd',
