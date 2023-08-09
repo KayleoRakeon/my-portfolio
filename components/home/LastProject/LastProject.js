@@ -3,7 +3,6 @@ import classes from './LastProject.module.css';
 import Image from 'next/image';
 
 // Composants
-import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 import Button from '@/components/global/Button/Button';
 
 function LastProject() {

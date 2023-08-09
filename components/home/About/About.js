@@ -3,7 +3,6 @@ import classes from './About.module.css';
 
 // Composants
 import Button from '@/components/global/Button/Button';
-import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 
 function About() {
 	return (

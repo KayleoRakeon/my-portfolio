@@ -7,7 +7,6 @@ import EMAILJS_IDS from '@/helpers/emailjs';
 import { SyncLoader } from 'react-spinners';
 
 // Composant
-import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 import Button from '@/components/global/Button/Button';
 import Info from '@/components/global/Info/Info';
 

@@ -29,22 +29,6 @@
 	--desktop: 1008px;
 }
 
-/* FONT-FACE */
-
-@font-face {
-	font-family: 'Optima';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Optima'), url('/fonts/OPTIMA.ttf') format('ttf');
-}
-
-@font-face {
-	font-family: 'Optima Bold';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Optima Bold'), url('/fonts/OPTIMA_B.ttf') format('ttf');
-}
-
 /* RESET */
 
 * {
