@@ -14,10 +14,6 @@ function Header({ ...props }) {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
-	const onLangSelectionClickHandler = () => {
-		props.setLang(props.lang === 'FR' ? 'EN' : 'FR');
-	};
-
 	return (
 		<header className={classes.Header}>
 			<Image src={logo} alt="Logo de Benjamin Bourgouin" />
@@ -46,38 +42,24 @@ function Header({ ...props }) {
 							</div>
 							<ul>
 								<li>
-									<Link href="/">
-										{props.lang === 'FR' ? 'accueil' : 'home'}
-									</Link>
+									<Link href="/">accueil</Link>
 								</li>
 								<li>
-									<Link href="/projets">
-										{props.lang === 'FR' ? 'projets' : 'projects'}
-									</Link>
+									<Link href="/projets">projets</Link>
 								</li>
 								<li>
-									<Link href="/#contact">
-										{props.lang === 'FR'
-											? 'me contacter'
-											: 'contact me'}
-									</Link>
+									<Link href="/#contact">me contacter</Link>
 								</li>
 							</ul>
 						</nav>
 
 						<div className={classes.LangSelection}>
 							<p>FR</p>
-							<div
-								className={classes.SelectorContainer}
-								onClick={onLangSelectionClickHandler}
-							>
+							<div className={classes.SelectorContainer}>
 								<div
 									className={classes.Indicator}
 									style={{
-										left:
-											props.lang === 'FR'
-												? '-10px'
-												: 'calc(100% - 26px)',
+										left: '-10px',
 									}}
 								></div>
 							</div>
