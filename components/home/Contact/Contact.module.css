@@ -1,3 +1,11 @@
+.Contact {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 .Contact form {
 	width: 100%;
 	margin: var(--2x) 0 0 0;
@@ -39,4 +47,19 @@
 	box-shadow: 8px 8px 0 var(--form-input-wrong);
 	border-color: var(--form-input-wrong);
 	outline: none;
+}
+
+@media screen and (min-width: 1008px) {
+	.Contact {
+		max-width: 1200px;
+		margin: auto;
+		flex-flow: row-reverse nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.Contact form {
+		width: 50%;
+		margin: 0 var(--2x) 0 0;
+	}
 }
