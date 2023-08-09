@@ -8,7 +8,9 @@ import SectionTitle from '@/components/global/SectionTitle/SectionTitle';
 function About() {
 	return (
 		<section id="about" className={classes.About}>
-			<SectionTitle label="à propos" shape="rectangle" />
+			<article className={classes.SectionTitle}>
+				<h2>à propos</h2>
+			</article>
 			<article className={classes.Content}>
 				<div className={classes.Quote}>
 					<p>

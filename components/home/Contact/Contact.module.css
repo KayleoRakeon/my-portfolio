@@ -6,9 +6,26 @@
 	align-items: center;
 }
 
-.Contact form {
+.Contact .SectionTitle {
+	width: 100%;
+	background: var(--primary);
+	border: solid 3px var(--dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--3x) var(--2x);
+	box-sizing: border-box;
+	margin: 0 0 var(--x) 0;
+	font-size: 22px;
+}
+
+.Contact .Form {
 	width: 100%;
 	margin: var(--2x) 0 0 0;
+}
+
+.Form form {
+	width: 100%;
 }
 
 .FormInput {
@@ -59,8 +76,12 @@
 		position: relative;
 	}
 
-	.Contact form {
-		width: 50%;
+	.Contact .SectionTitle {
+		width: 45%;
+	}
+
+	.Contact .Form {
+		width: 55%;
 		margin: 0 var(--2x) 0 0;
 	}
 }
