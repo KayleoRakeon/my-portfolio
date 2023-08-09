@@ -17,22 +17,26 @@ function Button({ ...props }) {
 	}
 
 	return (
-		<a
-			href={props.target}
-			className={classes.Link}
+		<div
 			style={{
 				justifyContent,
 			}}
-			download={props.download}
+			className={classes.ButtonContainer}
 		>
-			{!props.submit ? (
-				<button className={classes.Button}>{props.label}</button>
-			) : (
-				<button className={classes.Button} type="submit">
-					{props.label}
-				</button>
-			)}
-		</a>
+			<a
+				href={props.target}
+				className={classes.Link}
+				download={props.download}
+			>
+				{!props.submit ? (
+					<button className={classes.Button}>{props.label}</button>
+				) : (
+					<button className={classes.Button} type="submit">
+						{props.label}
+					</button>
+				)}
+			</a>
+		</div>
 	);
 }
 

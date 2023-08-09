@@ -1,6 +1,9 @@
-.Link {
+.ButtonContainer {
 	width: 100%;
 	display: flex;
+}
+
+.Link {
 	text-decoration: none;
 	color: var(--dark);
 }
