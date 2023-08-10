@@ -5,13 +5,17 @@ import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../../public/logo/logo_light_typo.svg';
 import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 function Header({ ...props }) {
-	// State
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 	// Variable
 	const { t } = useTranslation('common');
+	const router = useRouter();
+	const { locale } = router;
+
+	// State
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [lang, setLang] = useState(locale);
 
 	// Methode
 	const onMenuClickedHandler = () => {
@@ -67,7 +71,8 @@ function Header({ ...props }) {
 								<div
 									className={classes.Indicator}
 									style={{
-										left: '-10px',
+										left:
+											lang === 'fr' ? '-10px' : 'calc(100% - 26px)',
 									}}
 								></div>
 							</div>
