@@ -18,7 +18,7 @@ function Contact() {
 	const [isLoading, setIsLoading] = useState(false);
 
 	// Variables
-	const { t } = useTranslation('common');
+	const { t } = useTranslation('home');
 	const {
 		register,
 		handleSubmit,

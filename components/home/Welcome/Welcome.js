@@ -7,7 +7,7 @@ import Button from '@/components/global/Button/Button';
 
 function Welcome() {
 	// Variables
-	const { t } = useTranslation('common');
+	const { t } = useTranslation('home');
 
 	return (
 		<section className={classes.Welcome}>

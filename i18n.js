@@ -4,5 +4,7 @@ module.exports = {
 	redirectToDefaultLang: false,
 	pages: {
 		'*': ['common'],
+		'/': ['home'],
+		'/projets': ['projects'],
 	},
 };

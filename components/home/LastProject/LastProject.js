@@ -8,7 +8,7 @@ import Button from '@/components/global/Button/Button';
 
 function LastProject() {
 	// Variable
-	const { t } = useTranslation('common');
+	const { t } = useTranslation('home');
 	const lastProjectDatas = {
 		title: t('lastproject-name'),
 		image: 'kadaboo_1.jpg',

@@ -7,7 +7,7 @@ import Skill from '@/components/global/Skill/Skill';
 
 function Skills() {
 	// Variable
-	const { t } = useTranslation('common');
+	const { t } = useTranslation('home');
 	const skillsDatas = {
 		dev: [
 			{
