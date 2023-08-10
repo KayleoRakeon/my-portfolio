@@ -7,11 +7,11 @@ import logo from '../../../public/logo/logo_light_typo.svg';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
 
-function Header({ ...props }) {
+function Header() {
 	// Variable
 	const { t } = useTranslation('common');
 	const router = useRouter();
-	const { locale } = router;
+	const { pathname, asPath, query, locale } = router;
 
 	// State
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,14 @@ function Header({ ...props }) {
 	// Methode
 	const onMenuClickedHandler = () => {
 		setIsMenuOpen(!isMenuOpen);
+	};
+
+	const onLangSelectionClickhandler = () => {
+		const newLocale = lang === 'fr' ? 'en' : 'fr';
+		router.push({ pathname, query }, asPath, {
+			locale: newLocale,
+		});
+		setLang(newLocale);
 	};
 
 	return (
@@ -67,7 +75,10 @@ function Header({ ...props }) {
 
 						<div className={classes.LangSelection}>
 							<p>FR</p>
-							<div className={classes.SelectorContainer}>
+							<div
+								className={classes.SelectorContainer}
+								onClick={onLangSelectionClickhandler}
+							>
 								<div
 									className={classes.Indicator}
 									style={{
