@@ -26,6 +26,7 @@ function Header() {
 		const newLocale = lang === 'fr' ? 'en' : 'fr';
 		router.push({ pathname, query }, asPath, {
 			locale: newLocale,
+			scroll: false,
 		});
 		setLang(newLocale);
 	};
