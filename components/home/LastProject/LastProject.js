@@ -1,18 +1,20 @@
 // Librairie
 import classes from './LastProject.module.css';
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 
 // Composants
 import Button from '@/components/global/Button/Button';
 
 function LastProject() {
 	// Variable
+	const { t } = useTranslation('common');
 	const lastProjectDatas = {
-		title: 'Kadaboo',
+		title: t('lastproject-name'),
 		image: 'kadaboo_1.jpg',
 		description: [
-			'Kadaboo est une application destinée aux proffessionnel.le.s du milieu de l’éducation à la petite enfance. Le but de Kadaboo est de se comporter comme une banque d’activité pédagogique à réaliser avec les enfants, en fonction de différents thèmes, groupes d’âges, et/ou buts pédagogiques.',
-			'L’idée principale de Kadaboo part d’un constat: Les éducateur.ice.s prennent souvent sur leur temps libre pour trouver des idées d’activités pertinentes et ludiques à réaliser avec les enfants. Kadaboo leur permettrait désormais d’écourter ce temps de recherche et ainsi passer du temps de qualité avec leurs proches. ',
+			t('lastproject-description-1'),
+			t('lastproject-description-2'),
 		],
 		link: '/#lastProject',
 	};
@@ -24,7 +26,7 @@ function LastProject() {
 	return (
 		<section id="lastProject" className={classes.LastProject}>
 			<article className={classes.SectionTitle}>
-				<h2>dernier projet</h2>
+				<h2>{t('lastproject-title')}</h2>
 			</article>
 			<article className={classes.LastProjectContainer}>
 				<div className={classes.ProjectInfos}>
@@ -34,7 +36,7 @@ function LastProject() {
 							<p key={key}>{paragraph}</p>
 						))}
 					</div>
-					{/* <a href={lastProjectDatas.link}>plus de détails</a> */}
+					{/* <a href={lastProjectDatas.link}>{t('lastproject-cta')}</a> */}
 				</div>
 				<div className={classes.ImageContainer}>
 					<Image
@@ -47,10 +49,10 @@ function LastProject() {
 			</article>
 			<article className={classes.More}>
 				<Button
-					label="Voir tous mes&nbsp;projets"
+					label={t('lastproject-button')}
 					target="/projets"
 					align="center"
-					title="Jette à œil à mes autres projets"
+					title={t('lastproject-button')}
 				/>
 			</article>
 		</section>

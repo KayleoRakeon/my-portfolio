@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import EMAILJS_IDS from '@/helpers/emailjs';
 import { SyncLoader } from 'react-spinners';
+import useTranslation from 'next-translate/useTranslation';
 
 // Composant
 import Button from '@/components/global/Button/Button';
@@ -17,6 +18,7 @@ function Contact() {
 	const [isLoading, setIsLoading] = useState(false);
 
 	// Variables
+	const { t } = useTranslation('common');
 	const {
 		register,
 		handleSubmit,
@@ -67,7 +69,7 @@ function Contact() {
 	return (
 		<section id="contact" className={classes.Contact}>
 			<article className={classes.SectionTitle}>
-				<h2>me contacter</h2>
+				<h2>{t('contact-title')}</h2>
 			</article>
 			<article className={classes.Form}>
 				{errors.name || errors.email || errors.message ? (
@@ -94,7 +96,7 @@ function Contact() {
 								type="text"
 								id="name"
 								name="name"
-								placeholder="nom"
+								placeholder={t('contact-name-input-placeholder')}
 								pattern="^(?! *$)[A-Za-zÀ-ÖØ-öø-ÿ\- ]+$"
 								{...register('name', {
 									required: true,
@@ -106,7 +108,7 @@ function Contact() {
 								type="email"
 								id="email"
 								name="email"
-								placeholder="ton.courriel@mail.com"
+								placeholder={t('contact-mail-input-placeholder')}
 								pattern="^(?! *$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
 								{...register('email', {
 									required: true,
@@ -117,7 +119,7 @@ function Contact() {
 							<textarea
 								id="message"
 								name="message"
-								placeholder="message"
+								placeholder={t('contact-message-input-placeholder')}
 								pattern="(?! *$).+"
 								rows={5}
 								{...register('message', {
@@ -143,7 +145,7 @@ function Contact() {
 								</div>
 							) : (
 								<Button
-									label="envoyer"
+									label={t('contact-button')}
 									submit={true}
 									target=""
 									align="center"

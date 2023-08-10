@@ -21,10 +21,10 @@ function Welcome() {
 					<span>{t('welcome-title-secondLine')}</span>
 				</h1>
 				<Button
-					label="Qui ça ?"
+					label={t('welcome-button')}
 					target="#about"
 					align="center"
-					title="Découvre qui je suis | Benjamin Bourgouin"
+					title={t('welcome-button-title')}
 				/>
 			</article>
 		</section>

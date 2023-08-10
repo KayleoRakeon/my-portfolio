@@ -2,10 +2,12 @@
 	"header-nav-item-home": "accueil",
 	"header-nav-item-projects": "projets",
 	"header-nav-item-contact": "me contacter",
+	"header-alt-logo": "Logo de Benjamin Bourgouin",
 
 	"welcome-title-firstLine": "hey salut,",
 	"welcome-title-secondLine": "moi c'est benjamin !",
 	"welcome-button": "qui ça ?",
+	"welcome-button-title": "Découvre qui je suis | Benjamin Bourgouin",
 
 	"about-title": "à propos",
 	"about-quote": "\" Le diable se cache dans les détails. \"",
@@ -37,11 +39,18 @@
 
 	"contact-title": "me contacter",
 	"contact-name-input-placeholder": "nom",
-	"contact-mail-input-label": "ton.courriel@mail.com",
-	"contact-message-input-label": "message",
+	"contact-mail-input-placeholder": "ton.courriel@mail.com",
+	"contact-message-input-placeholder": "message",
 	"contact-button": "envoyer",
+	"contact-button-title": "Contacte moi par courriel",
+	"contact-success": "Merci de m'avoir contacté, je te répond le plus rapidement possible. À bientôt !",
+	"contact-error-api": "Désolé, une erreur est survenue... Je te conseilles de réessayer plus tard, ou de me contacter via un autre moyen, mes infos sont juste en dessous !",
+	"contact-error-form": "Veuillez remplir tous les champs du formulaire.",
 
 	"footer-bento": "Découvre mon Bento.me",
 	"footer-linkedin": "Contacte-moi sur LinkedIn",
-	"footer-github": "Visite mon profil GitHub"
+	"footer-github": "Visite mon profil GitHub",
+	"footer-mail": "Envoi moi un courriel",
+	"footer-phone-ca": "Contacte-moi par téléphone au Québec, Canada",
+	"footer-phone-fr": "Contacte-moi par téléphone en France"
 }

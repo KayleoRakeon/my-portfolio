@@ -2,10 +2,12 @@
 	"header-nav-item-home": "home",
 	"header-nav-item-projects": "projects",
 	"header-nav-item-contact": "contact",
+	"header-alt-logo": "Benjamin Bougouin's logo",
 
 	"welcome-title-firstLine": "hey there,",
 	"welcome-title-secondLine": "i'm benjamin !",
 	"welcome-button": "who's that ?",
+	"welcome-button-title": "Discover who i am | Benjamin Bourgouin",
 
 	"about-title": "about",
 	"about-quote": "\" The devil hides in details. \"",
@@ -13,7 +15,7 @@
 	"about-second-paragraph": "My messages are always open, so don't hesitate to contact me so we can get to know each other and discuss your project!",
 	"about-button": "Download my CV",
 
-	"skills-title": "skill",
+	"skills-title": "skills",
 	"skills-dev-1-1": "front-end",
 	"skills-dev-1-2": "development",
 	"skills-dev-2-1": "back-end",
@@ -37,11 +39,18 @@
 
 	"contact-title": "contact",
 	"contact-name-input-placeholder": "name",
-	"contact-mail-input-label": "your.mail@adress.com",
-	"contact-message-input-label": "message",
+	"contact-mail-input-placeholder": "your.email@adress.com",
+	"contact-message-input-placeholder": "message",
 	"contact-button": "send",
+	"contact-button-title": "Contact me by email",
+	"contact-success": "Thank you for contacting me, I'll get back to you as soon as possible. See you soon!",
+	"contact-error-api": "Sorry, there's been an error... I advise you to try again later, or to contact me by another means, my infos are just below!",
+	"contact-error-form": "Please fill in all the fields of the form.",
 
 	"footer-bento": "Discover my Bento.me",
 	"footer-linkedin": "Contact me on LinkedIn",
-	"footer-github": "Visit my GitHub profil"
+	"footer-github": "Visit my GitHub profil",
+	"footer-mail": "Send me an email",
+	"footer-phone-ca": "Contact me by phone in Quebec, Canada",
+	"footer-phone-fr": "Contact me by phone in France"
 }

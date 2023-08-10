@@ -1,47 +1,49 @@
 // Librairie
 import classes from './Skills.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
 // Composants
 import Skill from '@/components/global/Skill/Skill';
 
 function Skills() {
 	// Variable
+	const { t } = useTranslation('common');
 	const skillsDatas = {
 		dev: [
 			{
-				label: 'développement',
-				spanLabel: 'front-end',
+				label: t('skills-dev-1-1'),
+				spanLabel: t('skills-dev-1-2'),
 				imgName: 'frontend',
 			},
 			{
-				label: 'développement',
-				spanLabel: 'back-end',
+				label: t('skills-dev-2-1'),
+				spanLabel: t('skills-dev-2-2'),
 				imgName: 'backend',
 			},
 			{
-				label: 'développement',
-				spanLabel: 'mobile',
+				label: t('skills-dev-3-1'),
+				spanLabel: t('skills-dev-3-2'),
 				imgName: 'mobile',
 			},
 			{
-				label: 'optimisation',
-				spanLabel: 'SEO',
+				label: t('skills-dev-4-1'),
+				spanLabel: t('skills-dev-4-2'),
 				imgName: 'seo',
 			},
 		],
 		design: [
 			{
-				label: 'branding',
+				label: t('skills-design-1-1'),
 				imgName: 'branding',
 			},
 			{
-				label: 'wireframing',
-				spanLabel: 'et maquettage',
+				label: t('skills-design-2-1'),
+				spanLabel: t('skills-design-2-2'),
 				imgName: 'wireframe',
 			},
 			{
-				label: 'réflexion',
-				spanLabel: 'ui/ux',
+				label: t('skills-design-3-1'),
+				spanLabel: t('skills-design-3-2'),
 				imgName: 'ux',
 			},
 		],
@@ -50,7 +52,7 @@ function Skills() {
 	return (
 		<section id="skills" className={classes.Skills}>
 			<article className={classes.SectionTitle}>
-				<h2>expertise</h2>
+				<h2>{t('skills-title')}</h2>
 			</article>
 			<article className={classes.SkillsContainer}>
 				<div className={classes.Dev}>

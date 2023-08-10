@@ -4,10 +4,14 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../../public/logo/logo_light_typo.svg';
+import useTranslation from 'next-translate/useTranslation';
 
 function Header({ ...props }) {
 	// State
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	// Variable
+	const { t } = useTranslation('common');
 
 	// Methode
 	const onMenuClickedHandler = () => {
@@ -16,7 +20,7 @@ function Header({ ...props }) {
 
 	return (
 		<header className={classes.Header}>
-			<Image src={logo} alt="Logo de Benjamin Bourgouin" />
+			<Image src={logo} alt={t('header-alt-logo')} />
 			<div
 				className={
 					classes.Menu + (isMenuOpen ? ' ' + classes.Open : '')
@@ -42,13 +46,17 @@ function Header({ ...props }) {
 							</div>
 							<ul>
 								<li>
-									<Link href="/">accueil</Link>
+									<Link href="/">{t('header-nav-item-home')}</Link>
 								</li>
 								<li>
-									<Link href="/projets">projets</Link>
+									<Link href="/projets">
+										{t('header-nav-item-projects')}
+									</Link>
 								</li>
 								<li>
-									<Link href="/#contact">me contacter</Link>
+									<Link href="/#contact">
+										{t('header-nav-item-contact')}
+									</Link>
 								</li>
 							</ul>
 						</nav>
