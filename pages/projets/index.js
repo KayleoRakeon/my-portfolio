@@ -1,14 +1,14 @@
 // Librairie
 import classes from './Projets.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
 function Projets() {
+	// Variables
+	const { t } = useTranslation('projects');
+
 	return (
 		<section className={classes.Projects}>
-			<p>
-				Mes projets sont un peu timides,
-				<br />
-				mais promis ils vont arriver très bientôt !
-			</p>
+			<p>{t('projects-comming-soon')}</p>
 		</section>
 	);
 }
